@@ -5,6 +5,7 @@ export PS1='[ \u@\h:\w ]\n\$ '
 alias l="ls -lG"
 alias la="ls -laG"
 alias topc="top -o cpu"
+alias edit=nvim
 
 # The following function and completion configurations are added by
 # virtualenv switcher (located at /Users/vkuznetsov/envs/vs/bin).
