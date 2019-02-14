@@ -16,6 +16,10 @@ Configuration for Alactritty terminal. Will be symlinked to
 
 Configuration for Bash. Will be symlinked to `~/.bashrc`.
 
+### .gitconfig
+
+Configuration for Git. Will be symlinked to `~/.gitconfig`.
+
 ### .tmux.conf
 
 Configuration for TMux. Will be symlinked to `~/.tmux.conf`.
