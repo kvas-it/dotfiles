@@ -2,9 +2,8 @@ export PATH=~/bin:~/opt/bin:$PATH
 export PATH=/Applications/Keybase.app/Contents/SharedSupport/bin/:$PATH
 export PS1='[ \u@\h:\w ]\n\$ '
 
-alias l="ls -lG"
-alias la="ls -laG"
-alias topc="top -o cpu"
+alias l="ls -lGh --color"
+alias la="ls -laGh --color"
 alias edit=nvim
 
 # The following function and completion configurations are added by
