@@ -41,6 +41,7 @@ git submodule update --init --recursive
 
 # Symlink stuff into place.
 link alacritty.yml ~/.config/alacritty/alacritty.yml
+link awesome ~/.config/awesome
 link .bashrc ~/.bashrc
 link .gitconfig ~/.gitconfig
 link .tmux.conf ~/.tmux.conf

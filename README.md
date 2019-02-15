@@ -12,6 +12,11 @@ everything into your home directory (any existing files will be backed up into
 Configuration for Alactritty terminal. Will be symlinked to
 ~/.config/alacritty/alacritty.yml
 
+### awesome/
+
+Configuration folder for Awesome Window Manager. Will be symlinked to
+`~/.config/awesome`.
+
 ### .bashrc
 
 Configuration for Bash. Will be symlinked to `~/.bashrc`.
