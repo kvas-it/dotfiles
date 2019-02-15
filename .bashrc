@@ -6,14 +6,16 @@ alias l="ls -lGh --color"
 alias la="ls -laGh --color"
 alias edit=nvim
 
+export EDITOR=nvim
+
 # The following function and completion configurations are added by
-# virtualenv switcher (located at /Users/vkuznetsov/envs/vs/bin).
+# virtualenv switcher (located at /home/vkuznetsov/envs/py3/bin).
 function vs {
-    `/Users/vkuznetsov/envs/vs/bin/vs-bash-hook $1`
+    `/home/vkuznetsov/envs/py3/bin/vs-bash-hook $1`
 }
 alias vs-off=deactivate
-complete -C /Users/vkuznetsov/envs/vs/bin/vs-bash-complete vs
-complete -C /Users/vkuznetsov/envs/vs/bin/vs-bash-complete vs-del
+complete -C /home/vkuznetsov/envs/py3/bin/vs-bash-complete vs
+complete -C /home/vkuznetsov/envs/py3/bin/vs-bash-complete vs-del
 
 # This function activates one of the virtualenvs created by tox and installs
 # current package there in development mode. Handy for working on python
