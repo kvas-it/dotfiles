@@ -1,0 +1,42 @@
+## User interface controls
+[ui]
+style = compact
+username = Vasily Kuznetsov <vasily@adblockplus.org>
+
+[diff]
+git = true
+unified = 8
+
+[defaults]
+
+[extensions]
+progress =
+color =
+pager =
+record =
+purge =
+rebase =
+strip =
+histedit =
+shelve =
+
+# HgReview extension for Rietveld integration.
+hgreview = ~/prog/hg.adblockplus.org/codingtools/hgreview.py
+
+# Configuration for the review extension.
+[review]
+server = https://codereview.adblockplus.org/
+oauth2 = true
+
+# Configuration for the pager extension.
+[pager]
+pager = LESS='FSRX' less
+
+# Some useful aliases.
+[alias]
+. = status
+, = log --graph -l15
+,, = log --graph -l25
+x = !$HG revert --all && $HG purge
+xxx = !$HG revert --all && $HG purge --all
+z = strip tip

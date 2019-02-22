@@ -44,6 +44,7 @@ link alacritty.yml ~/.config/alacritty/alacritty.yml
 link awesome ~/.config/awesome
 link .bashrc ~/.bashrc
 link .gitconfig ~/.gitconfig
+link .hgrc ~/.hgrc
 link .tmux.conf ~/.tmux.conf
 link .vim ~/.vim
 link .vim ~/.config/nvim
