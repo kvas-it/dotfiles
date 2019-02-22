@@ -51,6 +51,10 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
 
+-- Customize the stock GTK theme a bit.
+beautiful.useless_gap = 0
+beautiful.border_focus = '#808080'
+
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
 editor = os.getenv("EDITOR") or "edit"
