@@ -69,22 +69,10 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    -- awful.layout.suit.spiral,
-    -- awful.layout.suit.spiral.dwindle,
-    -- awful.layout.suit.floating,
     awful.layout.suit.tile,
-    -- awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
-    -- awful.layout.suit.tile.top,
-    -- awful.layout.suit.fair,
-    -- awful.layout.suit.fair.horizontal,
-    -- awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
-    -- awful.layout.suit.magnifier,
     awful.layout.suit.corner.nw,
-    -- awful.layout.suit.corner.ne,
-    -- awful.layout.suit.corner.sw,
-    -- awful.layout.suit.corner.se,
 }
 -- }}}
 
@@ -95,8 +83,8 @@ lockscreen = function() awful.spawn("lockscreen") end
 screenshot = function() awful.spawn("gnome-screenshot -a") end
 
 -- Volume adjustment
-volume_up = function() awful.spawn("amixer set Master 5%+") end
-volume_down = function() awful.spawn("amixer set Master 5%-") end
+volume_up = function() awful.spawn("amixer set Master 10%+") end
+volume_down = function() awful.spawn("amixer set Master 10%-") end
 volume_toggle = function() awful.spawn("amixer set Master toggle") end
 
 -- {{{ Menu
@@ -540,9 +528,17 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = true }
     },
 
-    -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
+    -- Send common applications to specific tags.
+    { rule = { class = "Chromium" },
+      properties = { screen = 1, tag = "1" } },
+    -- { rule = { class = "Alacritty" },
+    --   properties = { screen = 1, tag = "3" } },
+    { rule = { class = "Telegram" },
+      properties = { screen = 1, tag = "2" } },
+    { rule = { class = "Slack" },
+      properties = { screen = 1, tag = "2" } },
+    { rule = { class = "Signal" },
+      properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 

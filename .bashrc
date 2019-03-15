@@ -50,5 +50,5 @@ export LANG=en_US.UTF-8
 
 # Activate ssh-agent unless already present.
 if [ "$SSH_AGENT_PID" == "" ]; then
-    eval "$(ssh-agent -s)"
+    `ssh-agent -s`
 fi
