@@ -4,6 +4,7 @@ export PS1='[ \u@\h:\w ]\n\$ '
 
 alias l="ls -lGh --color"
 alias la="ls -laGh --color"
+alias fd=fdfind
 alias edit=nvim
 
 export EDITOR=nvim
@@ -52,3 +53,8 @@ export LANG=en_US.UTF-8
 if [ "$SSH_AGENT_PID" == "" ]; then
     `ssh-agent -s`
 fi
+
+# Pyenv (see https://github.com/pyenv/pyenv)
+export PATH=~/.pyenv/bin:$PATH
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
