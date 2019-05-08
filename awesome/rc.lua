@@ -52,12 +52,13 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
 
 -- Customize the stock GTK theme a bit.
+beautiful.border_width = 2
 beautiful.useless_gap = 0
-beautiful.border_focus = '#808080'
+beautiful.border_focus = '#3584e4'
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "edit"
+editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
